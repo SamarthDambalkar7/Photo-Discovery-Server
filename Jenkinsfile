@@ -24,7 +24,7 @@ pipeline {
                 script{
                     echo "Docker Hub Password: ${dockerhubpwd}"
                     withCredentials([string(credentialsId: 'DockerHub-password', variable: 'DockerHubPassword')]) {
-                        bat 'docker login -u samarthdambalkar7 -p ${dockerhubpwd}'
+                        bat 'docker login -u samarthdambalkar7 -p Docker@789'
                       }
                     bat 'docker push samarthdambalkar7/photodiscoveryserver'
                 }
