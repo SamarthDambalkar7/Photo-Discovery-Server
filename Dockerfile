@@ -5,7 +5,7 @@ FROM openjdk:17-jdk
 WORKDIR /app
 
 # Copy the Spring Boot application JAR file into the container
-ADD target/photodiscoveryserver photodiscoveryserver.jar
+ADD target/photodiscoveryserver.jar photodiscoveryserver.jar
 
 # Expose the port that the Spring Boot application listens on
 EXPOSE 8761
