@@ -22,7 +22,7 @@ pipeline {
         {
             steps{
                 script{
-                    echo "Docker Hub Password: ${dockerhubpwd}"
+                    // echo "Docker Hub Password: ${dockerhubpwd}"
                     withCredentials([string(credentialsId: 'DockerHub-password', variable: 'DockerHubPassword')]) {
                         bat 'docker login -u samarthdambalkar7 -p Docker@789'
                       }
